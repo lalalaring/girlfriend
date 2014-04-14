@@ -4,7 +4,9 @@
 //Author:dingruiqiang(YanYuHongChen)
 //2014-04-10
 //////////////////////////////////////////////////////////////////////////
-#pragma once
+
+#ifndef _HC_THREADPOOL_H_
+#define _HC_THREADPOOL_H_
 #include "config.h"
 #include <iostream>
 #include <functional>
@@ -17,6 +19,8 @@
 #include <mutex>
 #include <condition_variable>
 #include <algorithm> 
+namespace girlfriend 
+{
 class cpp11_thread
 {
 public:
@@ -194,3 +198,6 @@ protected:
 	//
 	std::vector<std::shared_ptr<cpp11_thread> > m_vec_threads;
 };
+
+}//namespace girlfriend
+#endif//_HC_THREADPOOL_H_
