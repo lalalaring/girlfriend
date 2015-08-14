@@ -1,4 +1,4 @@
 girlfriend
 ==========
 
-common libs
+C++ common libs for game
